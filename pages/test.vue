@@ -11,9 +11,19 @@
 
 <script>
   import First from '~/components/First.vue'
+  import Button from "~/components/Button.vue"
   export default {
     name: "test",
-    color:"red"
+    color:"red",
+    data () {
+      return {
+
+      }
+    },
+    components: {
+      First,
+      Button
+    }
    
   }
 </script>
