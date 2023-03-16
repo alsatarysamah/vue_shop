@@ -6,13 +6,14 @@
 
 <script>
 export default {
-  data() {
-    return {};
-  },
-  props: {
+    props: {
     color: String,
     text:String
   },
+  data() {
+    return {};
+  },
+
 };
 </script>
 

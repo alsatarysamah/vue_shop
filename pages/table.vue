@@ -1,31 +1,18 @@
 <template>
-  <v-data-table :headers="headers" :items="items">
-    
-  </v-data-table>
+  <div>
+<Table/>
+  </div>
 </template>
+
 <script>
-export default {
-  data() {
-    return {
-      headers: [
-        { text: 'Name', value: 'name' },
-        { text: 'Age', value: 'age' },
-        { text: 'Actions', value: 'actions' },
-      ],
-      items: [
-        { name: 'John', age: 32 },
-        { name: 'Jane', age: 27 },
-        { name: 'Bob', age: 41 },
-      ],
+import Table from "../components/Table"
+  export default {
+    components:{
+      Table
     }
-  },
-  methods: {
-    editItem(item) {
-      // Handle edit action here
-    },
-    deleteItem(item) {
-      // Handle delete action here
-    },
-  },
-}
+  }
 </script>
+
+<style lang="sass" scoped>
+
+</style>

@@ -6,7 +6,13 @@
 </template>
 
 <script>
-export default {};
+import Grid from "../components/Grid"
+export default {
+  name:"grid",
+  components:{
+    Grid
+  }
+};
 </script>
 
 <style scoped>

@@ -1,14 +1,14 @@
 <template>
-<div>
-<h1>App</h1>
-        <Nuxt />
-      </div>
+  <div>
+     <v-app>
+    <CartNav />
+    <Nuxt />
+     </v-app>
+  </div>
 </template>
 
 <script>
 export default {
-  name: 'DefaultLayout',
- 
- 
-}
+  name: "DefaultLayout",
+};
 </script>

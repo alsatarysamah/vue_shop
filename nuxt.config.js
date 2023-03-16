@@ -29,6 +29,10 @@ export default {
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
   ],
+  modules: [
+    '@nuxtjs/axios'
+  ],
+
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
