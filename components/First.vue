@@ -8,15 +8,21 @@
     <img v-bind:src="img" :alt="`${name} 2 ${name}`" />
     <p>{{ name }} {{ second }}</p>
     <v-btn variant="flat" color="primery" @click="getUser">get</v-btn>
-    <p class="general">{{userCount}}</p>
+    <p class="general">{{ userCount }}</p>
+    <p> Coumputed === {{countIncrement}}</p>
+       
+  
   </div>
+
+  <!-- name props comonent data computed methods created mounted watch -->
 </template>
 
 <script>
-import axios from "axios";
-
 export default {
   name: "First",
+  props: {
+    message: String,
+  },
   data() {
     return {
       count: 0,
@@ -27,8 +33,10 @@ export default {
       userCount: 0,
     };
   },
-  props: {
-    message: String,
+  computed: {
+    countIncrement(){
+      return this.count+10
+    }
   },
   methods: {
     increase() {
@@ -36,14 +44,18 @@ export default {
       console.log(this.name);
     },
     async getUser() {
-      const res = await axios.get("https://pokeapi.co/api/v2/pokemon");
+      const res = await this.$axios.get("https://pokeapi.co/api/v2/pokemon");
       console.log(res.data);
       this.userCount = res.data.count;
+    },
+  },
+  watch: {
+    count(newVal, oldVal) {
+      console.log("old==>", oldVal);
+      console.log("new==>", newVal);
     },
   },
 };
 </script>
 
-<style lang="sass" scoped>
-
-</style>
+<style lang="sass" scoped></style>

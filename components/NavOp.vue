@@ -5,13 +5,13 @@
 </template>
 
 <script>
-import router from"../router";
+
 export default {
   name: "navop",
   methods: {
     go() {
       
-      router.push('/'); // navigate to the "test" route
+     this.$router.push('/'); // navigate to the "test" route
     },
   },
 };

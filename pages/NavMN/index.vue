@@ -1,7 +1,9 @@
 <template>
     <div>
 <!-- <Nav/> -->
-<NavOp />
+<!-- <NavOp /> -->
+
+
     </div>
 </template>
 
@@ -12,6 +14,13 @@ import NavOp from "~/components/NavOp"
             NavOp
         },
         name: "navOp",
+        
+        data() {
+  return {
+    showModal: false
+  }
+}
+
     }
 </script>
 
