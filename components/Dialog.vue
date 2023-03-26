@@ -4,7 +4,7 @@
       <v-card>
        
           <NewItem :closeDialog="closeDialog" :addNewItem="addNewItem" @newOne="addNewItem"/>
-       
+       <!-- setTimeout(()=>{true},10) -->
       </v-card>
     </v-dialog>
   </div>

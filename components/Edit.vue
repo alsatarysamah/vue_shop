@@ -4,18 +4,25 @@
     <v-text-field v-model="id"></v-text-field>
     <p>{{ desc }}</p>
     <v-text-field v-model="desc"></v-text-field>
-    <v-btn>Edit</v-btn>
+    <v-btn @click="handleEdit">Edit</v-btn>
   </div>
 </template>
 
 <script>
+
 export default {
   name: "Edit",
   data() {
     return {
       id: 0,
       desc: "",
+      image:""
     };
+  },
+  methods:{
+    handleEdit(){
+
+    }
   },
   created() {
     const query = this.$route.query;

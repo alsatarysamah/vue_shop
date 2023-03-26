@@ -1,0 +1,1 @@
+modal delete all index
