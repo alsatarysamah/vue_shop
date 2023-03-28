@@ -1,7 +1,7 @@
 # ag
 
 ## Build Setup
-hiiiiiiiiiiiiiiit
+hiiiiiiiiiiiiiiitf
 ```bash
 # install dependencies
 $ npm install
@@ -18,7 +18,6 @@ $ npm run generate
 ```
 
 For detailed explanation on how things work, check out the [documentation](https://nuxtjs.org).
-hiiiiiiiiiiiiiiit
 
 ## Special Directories
 
